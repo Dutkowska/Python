@@ -10,10 +10,10 @@ def num(n):
     entry.insert(END,n)
     
 def equ():
-    if SyntaxError or NameError:
+    """if SyntaxError or NameError:
         entry.delete(0, END)
         e="error"
-        entry.insert(0, e)
+        entry.insert(0, e)"""
     eque=entry.get()
     value=eval(eque)
     entry.delete(0, END)
