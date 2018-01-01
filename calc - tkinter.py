@@ -10,14 +10,15 @@ def num(n):
     entry.insert(END,n)
     
 def equ():
-    """if SyntaxError or NameError:
+    try:
+        eque=entry.get()
+        value=eval(eque)
         entry.delete(0, END)
-        e="error"
-        entry.insert(0, e)"""
-    eque=entry.get()
-    value=eval(eque)
-    entry.delete(0, END)
-    entry.insert(0, value)
+        entry.insert(0, value)
+    except NameError: #delete a+a= / jakakaka=
+        entry.delete(0, END)
+        e="Write numbers!"
+        entry.insert(0,e)
     
 def clearr():
     entry.delete(0, END)
