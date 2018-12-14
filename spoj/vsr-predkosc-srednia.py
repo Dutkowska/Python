@@ -1,5 +1,6 @@
 t=int(input())
 for i in range(t):
-    v,w=int(input()), int(input())
+    tab=[int(x) for x in input().split()]
+    v,w=tab[0], tab[1]
     wynik=2*v*w/(v+w)
     print(wynik)
