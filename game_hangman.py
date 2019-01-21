@@ -2,9 +2,9 @@ import random
 
 def start():
     name=input("Write your name: ")
-    print("Hello ", name, ". Let's start a game!")
-    print("Your word has length: ", len(word), ". Try to guess its, write a letter. Enter 'stop' to stop.")
-    for char in word: guess.append('-')
+    print("Hello ", name, " let's start a game!")
+    print("Your word has length: ", len(word))
+    for char in word: guess.append('_')
     print(*guess)
 def game():
     position=word.index(char)
@@ -33,13 +33,21 @@ wrong=0 #num of incorrect answers
 good=[] #only good chars
 write=[] #all chars
 guess=[] #to write sth like: _ _ a _ _ b
-repeat=4 #size of game's loop
 turn=0
 words=['hangman', 'input', 'name', 'hello', 'loop', 'dog', 'cat']
 word=random.choice(words)
 message="{beg} Try again, you still have {num} chance(s). Enter 'stop' to stop."
 
+
 start()
+while True:
+    try: 
+        repeat=int(input("How many attempts do you want? "))
+        print("You have ", repeat, " chances. Good luck! Write a character or 'stop' to stop: ")
+        break
+    except ValueError:
+        print("Your number is not a numeric data. Try again.")
+
 while turn<repeat:
     stay=repeat-turn-1
     char=input()
@@ -48,6 +56,9 @@ while turn<repeat:
     elif len(char)>1:
         turn-=1
         print(message.format(beg="Write only 1 character.", num=stay+1))
+    elif char.isdigit(): 
+        turn-=1
+        print(message.format(beg="Write a character, not numerical data.", num=stay+1))
     elif char in write and write.count(char)==word.count(char):# loop - second 'o' is ok, third not.
         turn-=1
         print(message.format(beg="You have already written that letter!", num=stay+1))
