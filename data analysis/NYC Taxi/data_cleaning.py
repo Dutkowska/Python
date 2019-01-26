@@ -35,4 +35,4 @@ taxi = taxi[(taxi.trip_distance.between(Distance_limity[0], Distance_limity[1],i
 taxi["lpep_pickup_datetime"] = pd.to_datetime(taxi["lpep_pickup_datetime"])
 taxi["Lpep_dropoff_datetime"] = pd.to_datetime(taxi["lpep_dropoff_datetime"])
 
-taxi.to_csv('datas.csv')
+taxi.to_csv('datas.csv', index=False)
