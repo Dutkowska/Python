@@ -39,7 +39,10 @@ Conclusions:
     + we see when we had weekend (wave increase in every week)
   - MINUTES:
     + no curious situation
-2. Group rides:
+2. Places:
+  - manhattan - traffic nightmare (a lot of rides from/to manhattan)
+  - huge interest in Slope Park, Brooklyn (a lot of rides to Manhattan - 7 x more than mean from all zones)
+3. Group rides:
   - there are no rides with RatecodeID='group_rides';
   - why? Maybe 'cause we had only 31(!) courses with more than 6 passengers
   - we don't need to but more "big" cars for group rides.
