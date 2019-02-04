@@ -1,3 +1,4 @@
+#task: https://pl.spoj.com/problems/EUCGAME/
 t=int(input())
 for i in range(t):
     tab=[int(x) for x in input().split()]

@@ -7,11 +7,8 @@ def switcher(x):
         '%': a%b
     }[x]
 
-tab=[]
 while True:
     tab=input().split()
-    sign=tab[0]
-    a, b=int(tab[1]), int(tab[2])
+    if tab=="": break
+    sign, a, b = tab[0], int(tab[1]), int(tab[2])
     print(switcher(sign))
-    if tab=="":
-        break

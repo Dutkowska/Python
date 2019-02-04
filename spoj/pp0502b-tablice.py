@@ -1,3 +1,4 @@
+#task: https://pl.spoj.com/problems/PP0502B/
 t=int(input())
 for i in range(t):
     n=int(input())

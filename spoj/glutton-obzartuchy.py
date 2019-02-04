@@ -1,3 +1,4 @@
+#task: https://pl.spoj.com/problems/GLUTTON/
 from math import *
 doba=60*60*24
 t=int(input())
