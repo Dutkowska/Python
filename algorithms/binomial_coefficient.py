@@ -1,10 +1,8 @@
+# (n k) = n! / k!(n-1)! symbol Newtona
 def factorial(a):
-    if a==0: return 1
-    else: return a*factorial(a-1)
-n=int(input("n: "))
-k=int(input("k: "))
-if n<k:
-    print("Wrong numbers.")
-else:
-    bin_coe=factorial(n)/(factorial(k)*factorial(n-k))
-    print(bin_coe)
+    return 1 if (a==0) else a*factorial(a-1)
+def bin_coe(n, k):
+    if n<k: print("Wrong numbers")
+    else: return factorial(n)/(factorial(k)*factorial(n-k))
+
+#print(bin_coe(4,2))
