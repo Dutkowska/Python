@@ -9,10 +9,8 @@ def newton_method(f, df, x0, eps, eps2):
         if abs(fn)<eps:
             print("Iterations: ", i, "; solution:")
             return xn
-        
         Dfn=Df(xn)
-        if Dfn == 0:
-            print("No solutions")
+        if Dfn == 0: print("No solutions")
         xn=xn-fn/Dfn
 
 fx=input("Enter a polynomian f, such as f(x)=0: ")

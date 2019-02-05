@@ -1,10 +1,8 @@
 #give me a solution of continuous function f(x)=0, from interval [a,b]
 def bisection_method(f, a, b, n):
-    if (f(a)*f(b)>=0):
-        print("Wrong datas.")
+    if (f(a)*f(b)>=0): print("Wrong datas.")
     else:
-        an=a
-        bn=b
+        an, bn = a, b
         for i in range(n):
             cn=(an+bn)/2
             fcn=f(cn)
