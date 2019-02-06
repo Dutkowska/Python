@@ -1,6 +1,0 @@
-Good morning beautiful! Choose what you want and write me a code: 
-r - only read list of words
-c - correct the word
-a - add new words
-s - check your knowledge = start the memory game
-e - exit from the program
