@@ -1,0 +1,1 @@
+This is ONLY a sceleton of the hangman game - I will end this later. If you want to see my hangman game (but without gui) - check file game_hangman.py (../ directory)
